@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>order</title>
+    <style>
+        *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* adding background image */
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: url(image27.jpg);
+    /* background-size: c; */
+    background-attachment: fixed;
+}
+h1{
+    display: flex;
+    justify-content: center;
+    color: black;
+    background-color: transparent;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.form{
+    width: 350px;
+    height: 450px;
+    background-color: rgb(30 , 39, 39, 0, 3);
+    box-shadow: 0 5px 30px white;
+}
+.formGroup{
+    display: flex;
+    justify-content: center;
+ }
+ .formGroup input{
+    border: none;
+    width: 80%;
+    padding: 10px;
+    margin-bottom: 20px;
+    background-color: transparent;
+    border-bottom: 2px solid white;
+    color: white;
+    font-weight: bold;
+ }
+ ::placeholder{
+    color: black;
+ }
+ h2{
+    display: flex;
+    justify-content: center;
+    color: black;
+    background-color: transparent;
+ }
+ input{
+    align-content: center;
+    justify-content: center;
+ }
+ .btn{
+    padding: 10px;
+    outline: none;
+    width: 150px;
+    border-radius: 20px;
+    border-style: none;
+    background-color: rgb(28, 131, 28);
+    color: whitesmoke;
+    font-weight: 600;
+
+ }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="form">
+    <h1>Place Order</h1><br>
+        <form action="" class="signUp">
+            <div class="formGroup">
+                <input type="text" name="name" id="user name" placeholder="User Name" autocomplete="off">
+            </div>
+            <div class="formGroup">
+                <input type="email" name="email" id="Email" placeholder="Email ID" autocomplete="off">
+            </div>
+            <div class="formGroup">
+                <input type="phone" name="phone" id="Phone" placeholder="Phone Number" autocomplete="off">
+            </div>
+            <div class="formGroup">
+                <input type="number" name="item" id="Item" placeholder="Number Item" autocomplete="off">
+            </div>
+
+        <label><h2>Payment Mode</h2></label><br>
+        <input type="radio"  required id="phonepe" name="payment">
+        <label for="phonepe"><b>phonepe</b></label>
+
+        
+        <input type="radio"  required id="googlepay" name="payment">
+        <label for="googlepay"><b>GooglePay</b></label><br><br>
+
+       <center> <button class="btn"><a href="thankyou.html">Submit</button></a></center>
+        <!-- <a href="thankyou.html">
+        <input type="button" style="background-color:rgb(6, 230, 43);color:white;width:150px;
+          height:40px;" value="submit">
+        </a> -->
+    </form>
+    </div>
+    </div>
+    
+</body>
+</html>
